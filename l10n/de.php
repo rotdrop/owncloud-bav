@@ -5,7 +5,7 @@
 "Generated IBAN %s and submitted IBAN %s do not coincide" => "Berechnete IBAN %s und angegebene IBAN %s stimmen nicht überein",
 "The account number %s @ %s appears not to be valid German bank account id." => "Die Kontonummer %s @ %s scheint ungültig zu sein",
 "No errors found, but use at your own risk." => "Keine Fehler gefunden, aber benutzt das Zeug bitte auf eigenes Risko ;)",
-"Bank Account Validator" => " ?>",
+"Bank Account Validator" => "Bankkonto Validierung (DE)",
 "IBAN" => "IBAN",
 "IBAN of bank account" => "IBAN des Bankkontos",
 "BIC" => "BIC",
