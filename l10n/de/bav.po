@@ -1,0 +1,83 @@
+# German translations for bav.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Claus-Justus Heine <himself@claus-justus-heine.de>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bav\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-19 02:37+0100\n"
+"PO-Revision-Date: 2014-11-19 02:40+0100\n"
+"Last-Translator: Claus-Justus Heine <himself@claus-justus-heine.de>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: appinfo/app.php:37
+msgid "BAV"
+msgstr "BAV"
+
+#: controller/pagecontroller.php:102
+msgid "Failed to validate IBAN"
+msgstr "Die IBAN scheint nicht korrekt zu sein"
+
+#: controller/pagecontroller.php:122
+#, php-format
+msgid "Computed BIC %s and submitted BIC %s do not coincide"
+msgstr ""
+"Automatisch ermittelte BIC %s und angegebene BIC %s stimmen nicht überein"
+
+#: controller/pagecontroller.php:133
+#, php-format
+msgid "Generated IBAN %s and submitted IBAN %s do not coincide"
+msgstr "Berechnete IBAN %s und angegebene IBAN %s stimmen nicht überein"
+
+#: controller/pagecontroller.php:137
+#, php-format
+msgid ""
+"The account number %s @ %s appears not to be valid German bank account id."
+msgstr "Die Kontonummer %s @ %s scheint ungültig zu sein"
+
+#: controller/pagecontroller.php:144
+msgid "No errors found, but use at your own risk."
+msgstr ""
+"Keine Fehler gefunden, aber benutzt das Zeug bitte auf eigenes Risko ;)"
+
+#: js/script.js:24
+msgid "Bank Account Validator"
+msgstr " ?>"
+
+#: templates/main.php:14
+msgid "IBAN"
+msgstr "IBAN"
+
+#: templates/main.php:20
+msgid "IBAN of bank account"
+msgstr "IBAN des Bankkontos"
+
+#: templates/main.php:25
+msgid "BIC"
+msgstr "BIC"
+
+#: templates/main.php:31
+msgid "BIC of bank"
+msgstr "BIC des Kreditinstituts"
+
+#: templates/main.php:36
+msgid "Bank Id"
+msgstr "Bankleitzahl"
+
+#: templates/main.php:42
+msgid "Bank id of bank account"
+msgstr "BLZ des Bankkontos"
+
+#: templates/main.php:47
+msgid "Account Id"
+msgstr "Kontonummer"
+
+#: templates/main.php:53
+msgid "Id of bank account"
+msgstr "Kontonummer des Bankkontos"

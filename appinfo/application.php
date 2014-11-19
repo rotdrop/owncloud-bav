@@ -9,42 +9,42 @@
  * @copyright Claus-Justus Heine 2014
  */
 
-namespace OCA\TestApp\AppInfo;
+namespace OCA\BAV\AppInfo;
 
 
 use \OCP\AppFramework\App;
 
-use \OCA\TestApp\Controller\PageController;
+use \OCA\BAV\Controller\PageController;
 
 
 class Application extends App {
 
 
-	public function __construct (array $urlParams=array()) {
-		parent::__construct('bav', $urlParams);
+  public function __construct (array $urlParams=array()) {
+    parent::__construct('bav', $urlParams);
 
-		$container = $this->getContainer();
+    $container = $this->getContainer();
 
-		/**
-		 * Controllers
-		 */
-		$container->registerService('PageController', function($c) {
-			return new PageController(
-				$c->query('AppName'), 
-				$c->query('Request'),
-				$c->query('UserBlahId')
-			);
-		});
+    /**
+     * Controllers
+     */
+    $container->registerService('PageController', function($c) {
+        return new PageController(
+          $c->query('AppName'), 
+          $c->query('Request'),
+          $c->query('UserBlahId')
+          );
+      });
 
 
-		/**
-		 * Core
-		 */
-		$container->registerService('UserBlahId', function($c) {
-			return \OCP\User::getUser()."blah";
-		});		
+    /**
+     * Core
+     */
+    $container->registerService('UserBlahId', function($c) {
+        return \OCP\User::getUser()."blah";
+      });		
 		
-	}
+  }
 
 
 }

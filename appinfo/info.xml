@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <info>
     <id>bav</id>
-    <name>Test App</name>
-    <description></description>
+    <name>Bank Account Validator</name>
+    <description>German Bank Account Validator</description>
     <licence>AGPL</licence>
     <author>Claus-Justus Heine</author>
     <version>0.0.1</version>

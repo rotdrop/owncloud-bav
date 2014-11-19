@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-19 02:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: appinfo/app.php:37
+msgid "BAV"
+msgstr ""
+
+#: controller/pagecontroller.php:102
+msgid "Failed to validate IBAN"
+msgstr ""
+
+#: controller/pagecontroller.php:122
+#, php-format
+msgid "Computed BIC %s and submitted BIC %s do not coincide"
+msgstr ""
+
+#: controller/pagecontroller.php:133
+#, php-format
+msgid "Generated IBAN %s and submitted IBAN %s do not coincide"
+msgstr ""
+
+#: controller/pagecontroller.php:137
+#, php-format
+msgid ""
+"The account number %s @ %s appears not to be valid German bank account id."
+msgstr ""
+
+#: controller/pagecontroller.php:144
+msgid "No errors found, but use at your own risk."
+msgstr ""
+
+#: js/script.js:24
+msgid "Bank Account Validator"
+msgstr ""
+
+#: templates/main.php:14
+msgid "IBAN"
+msgstr ""
+
+#: templates/main.php:20
+msgid "IBAN of bank account"
+msgstr ""
+
+#: templates/main.php:25
+msgid "BIC"
+msgstr ""
+
+#: templates/main.php:31
+msgid "BIC of bank"
+msgstr ""
+
+#: templates/main.php:36
+msgid "Bank Id"
+msgstr ""
+
+#: templates/main.php:42
+msgid "Bank id of bank account"
+msgstr ""
+
+#: templates/main.php:47
+msgid "Account Id"
+msgstr ""
+
+#: templates/main.php:53
+msgid "Id of bank account"
+msgstr ""

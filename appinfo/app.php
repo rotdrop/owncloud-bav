@@ -9,7 +9,7 @@
  * @copyright Claus-Justus Heine 2014
  */
 
-namespace OCA\BankAccountValidatorApp\AppInfo;
+namespace OCA\BAV\AppInfo;
 
 \OC::$CLASSPATH['IBAN'] = 'bav/3rdparty/php-iban/oophp-iban.php';
 \OC::$CLASSPATH['malkusch\bav\BAV'] = 'bav/3rdparty/bav/autoloader/autoloader.php';

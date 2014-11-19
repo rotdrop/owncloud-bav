@@ -21,15 +21,32 @@
         dialogHolder = $('#bav-container');
 
         dialogHolder.dialog({
-          title: 'bav dialog',
+          title: t('bav', 'Bank Account Validator'),
           width: 'auto',
           height: 'auto',
           modal: true,
           closeOnEscape: false,
           dialogClass: 'bav',
-          resizable: true,
+          resizable: false,
           open: function() {
             $('#navigation').hide();
+
+            dialogHolder.find('input[type="text"]').
+              off('blur').
+              on('blur', function(event) {
+              event.stopImmediatePropagation();
+              $.post(OC.generateUrl('/apps/bav/validate'),
+                     dialogHolder.find('form').serialize()).success(function(result) {
+                //alert('RESULT '+result.bankAccountIBAN);
+                dialogHolder.find('input.bankAccountBIC').val(result.bankAccountBIC);
+                dialogHolder.find('input.bankAccountIBAN').val(result.bankAccountIBAN);
+                dialogHolder.find('input.bankAccountBankId').val(result.bankAccountBankId);
+                dialogHolder.find('input.bankAccountId').val(result.bankAccountId);
+                dialogHolder.find('div.status').html(result.message);
+                return false;
+              });
+              return false;
+            });
           },
           close: function(event) {
             dialogHolder.dialog('destroy');
@@ -40,23 +57,6 @@
       return false;
     });
 
-    $('#hello').click(function () {
-      alert('Hello from your script file');
-    });
-
-    $('#echo').click(function () {
-      var url = OC.generateUrl('/apps/bav/echo');
-      var data = {
-	echo: $('#echo-content').val(),
-        foobar: 'blub',
-        blahfoobar: 'huhu'
-      };
-
-      $.post(url, data).success(function (response) {
-	$('#echo-result').text(response.echo);
-      });
-      
-    });
   });
 
 })(jQuery, OC);

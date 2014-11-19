@@ -9,7 +9,7 @@
  * @copyright Claus-Justus Heine 2014
  */
 
-namespace OCA\TestApp\AppInfo;
+namespace OCA\BAV\AppInfo;
 
 /**
  * Create your routes in here. The name is the lowercase name of the controller
@@ -26,5 +26,5 @@ $application->registerRoutes(
     'routes' => array(
       array('name' => 'page#dialog', 'url' => '/bav', 'verb' => 'POST'),
       array('name' => 'page#index', 'url' => '/', 'verb' => 'GET'),
-      array('name' => 'page#do_blah_echo', 'url' => '/echo', 'verb' => 'POST'),
+      array('name' => 'page#validate', 'url' => '/validate', 'verb' => 'POST'),
 )));

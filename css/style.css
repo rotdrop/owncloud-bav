@@ -1,3 +1,11 @@
-#hello {
-	color: red;
+.ui-dialog.bav {
+  overflow:hidden !important;
+}
+
+.bank-account-validator td.label {
+  padding-right: 1em;
+}
+
+.bank-account-validator input {
+  width:16em;
 }
