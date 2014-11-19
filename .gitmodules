@@ -1,0 +1,3 @@
+[submodule "3rdparty/bav"]
+	path = 3rdparty/bav
+	url = https://github.com/bav-php/bav.git
