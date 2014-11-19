@@ -95,6 +95,8 @@ class PageController extends Controller
     
     $bav = new \malkusch\bav\BAV;
 
+    $bankAccountBankName = '';
+    
     if ($bankAccountIBAN != '') {
       $iban = new \IBAN($bankAccountIBAN);
       
@@ -115,7 +117,9 @@ class PageController extends Controller
     if ($bankAccountBankId != '') {
       $blz = $bankAccountBankId;
       if ($bav->isvalidBank($blz)) {
-        $bavBIC = $bav->getMainAgency($blz)->getBIC();
+        $agency = $bav->getMainAgency($blz);
+        $bavBIC = $agency->getBIC();
+        $bankAccountBankName = $agency->getName().', '.$agency->getCity();
         if ($bankAccountBIC == '') {
           $bankAccountBIC = $bavBIC;
         } else if ($bankAccountBIC != $bavBIC) {
@@ -147,6 +151,7 @@ class PageController extends Controller
                  'bankAccountBIC' => $bankAccountBIC,
                  'bankAccountBankId' => $bankAccountBankId,
                  'bankAccountId' => $bankAccountId,
+                 'bankAccountBankName' => $bankAccountBankName,
                  'message' => nl2br($message),
                  'suggestions' => nl2br($suggestions));
   }

@@ -42,6 +42,7 @@
                 dialogHolder.find('input.bankAccountIBAN').val(result.bankAccountIBAN);
                 dialogHolder.find('input.bankAccountBankId').val(result.bankAccountBankId);
                 dialogHolder.find('input.bankAccountId').val(result.bankAccountId);
+                dialogHolder.find('input.bankAccountBankName').val(result.bankAccountBankName);
                 dialogHolder.find('div.status').html(result.message);
                 return false;
               });

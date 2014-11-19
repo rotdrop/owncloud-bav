@@ -53,6 +53,20 @@ $L = \OC_L10N::get('bav');
                placeholder="<?php echo $L->t("Id of bank account"); ?>" />
       </td>
     </tr>
+    <tr>
+      <td>
+        <?php echo $L->t('Bank'); ?>
+      </td>
+      <td>
+        <input class="bankAccountBankName"
+               type="text"
+               name="bankAccountBankName"
+               value="<?php echo $_['bankAccountBanName']; ?>"
+               placeholder="<?php echo $L->t("Bank Name"); ?>"
+               disabled="disabled"
+               />
+      </td>
+    </tr>
   </table>
   <div class="status"></div>
   <div class="suggestions"></div>
