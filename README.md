@@ -1,8 +1,11 @@
-# Test App
+# BAV
 Place this app in **owncloud/apps/**
 
+Not so elaboraty bank account validator for German bank accounts. All
+credits got to
 
-## Running tests
-After [Installing PHPUnit](http://phpunit.de/getting-started.html) run:
+https://github.com/bav-php/bav
 
-    phpunit tests/
+and
+
+https://code.google.com/p/php-iban/
