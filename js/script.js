@@ -21,7 +21,7 @@
         dialogHolder = $('#bav-container');
 
         dialogHolder.dialog({
-          title: t('bav', 'Bank Account Validator'),
+          title: t('bav', 'BAV - Bank Account Validator (DE)'),
           width: 'auto',
           height: 'auto',
           modal: true,
