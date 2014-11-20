@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 02:53+0100\n"
+"POT-Creation-Date: 2014-11-20 01:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,32 +21,55 @@ msgstr ""
 msgid "BAV"
 msgstr ""
 
-#: controller/pagecontroller.php:102
+#: controller/pagecontroller.php:104
 msgid "Failed to validate IBAN"
 msgstr ""
 
-#: controller/pagecontroller.php:122
+#: controller/pagecontroller.php:120
+#, php-format
+msgid "Bank-id %s form IBAN and submitted bank-id %s do not coincide"
+msgstr ""
+
+#: controller/pagecontroller.php:126
+#, php-format
+msgid "Account-id %s form IBAN and submitted account-id %s do not coincide"
+msgstr ""
+
+#: controller/pagecontroller.php:141
 #, php-format
 msgid "Computed BIC %s and submitted BIC %s do not coincide"
 msgstr ""
 
-#: controller/pagecontroller.php:133
+#: controller/pagecontroller.php:151
 #, php-format
 msgid "Generated IBAN %s and submitted IBAN %s do not coincide"
 msgstr ""
 
-#: controller/pagecontroller.php:137
+#: controller/pagecontroller.php:155
 #, php-format
 msgid ""
-"The account number %s @ %s appears not to be valid German bank account id."
+"The account number %s @ %s appears not to be a valid German bank account id."
 msgstr ""
 
-#: controller/pagecontroller.php:144
+#: controller/pagecontroller.php:160
+#, php-format
+msgid "The bank-id %s does not seem to be a valid German bank id."
+msgstr ""
+
+#: controller/pagecontroller.php:166
 msgid "No errors found, but use at your own risk."
 msgstr ""
 
-#: js/script.js:24
-msgid "Bank Account Validator"
+#: js/script.js:26
+msgid "BAV - Bank Account Validator (DE)"
+msgstr ""
+
+#: js/script.js:34
+msgid "Clear"
+msgstr ""
+
+#: js/script.js:36
+msgid "Clear all fields of the input form"
 msgstr ""
 
 #: templates/main.php:14
@@ -79,4 +102,12 @@ msgstr ""
 
 #: templates/main.php:53
 msgid "Id of bank account"
+msgstr ""
+
+#: templates/main.php:58
+msgid "Bank"
+msgstr ""
+
+#: templates/main.php:65
+msgid "Bank Name"
 msgstr ""

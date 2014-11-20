@@ -1,11 +1,16 @@
 <?php $TRANSLATIONS = array(
 "BAV" => "BAV",
 "Failed to validate IBAN" => "Die IBAN scheint nicht korrekt zu sein",
+"Bank-id %s form IBAN and submitted bank-id %s do not coincide" => "Aus der IBAN abgeleitete BLZ %s und angegebene BLZ %s stimmen nicht überein",
+"Account-id %s form IBAN and submitted account-id %s do not coincide" => "Aus der IBAN abgeleitet Kontonummer %s und angegebene Kontonummer %s stimmen nicht überein",
 "Computed BIC %s and submitted BIC %s do not coincide" => "Automatisch ermittelte BIC %s und angegebene BIC %s stimmen nicht überein",
 "Generated IBAN %s and submitted IBAN %s do not coincide" => "Berechnete IBAN %s und angegebene IBAN %s stimmen nicht überein",
-"The account number %s @ %s appears not to be valid German bank account id." => "Die Kontonummer %s @ %s scheint ungültig zu sein",
+"The account number %s @ %s appears not to be a valid German bank account id." => "Die Kontonummer %s @ %s scheint ungültig zu sein",
+"The bank-id %s does not seem to be a valid German bank id." => "Die BLZ %s scheint ungültig zu sein",
 "No errors found, but use at your own risk." => "Keine Fehler gefunden, aber benutzt das Zeug bitte auf eigenes Risko ;)",
-"Bank Account Validator" => "Bankkonto Validierung (DE)",
+"BAV - Bank Account Validator (DE)" => "BAV - Bank Account Validator (DE)",
+"Clear" => "Löschen",
+"Clear all fields of the input form" => "Lösche alle Felddaten",
 "IBAN" => "IBAN",
 "IBAN of bank account" => "IBAN des Bankkontos",
 "BIC" => "BIC",
@@ -13,5 +18,7 @@
 "Bank Id" => "Bankleitzahl",
 "Bank id of bank account" => "BLZ des Bankkontos",
 "Account Id" => "Kontonummer",
-"Id of bank account" => "Kontonummer des Bankkontos"
+"Id of bank account" => "Kontonummer des Bankkontos",
+"Bank" => "Bank",
+"Bank Name" => "Name der Bank"
 );

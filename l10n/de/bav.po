@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 02:37+0100\n"
-"PO-Revision-Date: 2014-11-19 02:53+0100\n"
+"POT-Creation-Date: 2014-11-20 01:47+0100\n"
+"PO-Revision-Date: 2014-11-20 01:50+0100\n"
 "Last-Translator: Claus-Justus Heine <himself@claus-justus-heine.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -20,35 +20,58 @@ msgstr ""
 msgid "BAV"
 msgstr "BAV"
 
-#: controller/pagecontroller.php:102
+#: controller/pagecontroller.php:104
 msgid "Failed to validate IBAN"
 msgstr "Die IBAN scheint nicht korrekt zu sein"
 
-#: controller/pagecontroller.php:122
+#: controller/pagecontroller.php:120
+#, php-format
+msgid "Bank-id %s form IBAN and submitted bank-id %s do not coincide"
+msgstr "Aus der IBAN abgeleitete BLZ %s und angegebene BLZ %s stimmen nicht überein"
+
+#: controller/pagecontroller.php:126
+#, php-format
+msgid "Account-id %s form IBAN and submitted account-id %s do not coincide"
+msgstr "Aus der IBAN abgeleitet Kontonummer %s und angegebene Kontonummer %s stimmen nicht überein"
+
+#: controller/pagecontroller.php:141
 #, php-format
 msgid "Computed BIC %s and submitted BIC %s do not coincide"
 msgstr ""
 "Automatisch ermittelte BIC %s und angegebene BIC %s stimmen nicht überein"
 
-#: controller/pagecontroller.php:133
+#: controller/pagecontroller.php:151
 #, php-format
 msgid "Generated IBAN %s and submitted IBAN %s do not coincide"
 msgstr "Berechnete IBAN %s und angegebene IBAN %s stimmen nicht überein"
 
-#: controller/pagecontroller.php:137
+#: controller/pagecontroller.php:155
 #, php-format
 msgid ""
-"The account number %s @ %s appears not to be valid German bank account id."
+"The account number %s @ %s appears not to be a valid German bank account id."
 msgstr "Die Kontonummer %s @ %s scheint ungültig zu sein"
 
-#: controller/pagecontroller.php:144
+#: controller/pagecontroller.php:160
+#, php-format
+msgid "The bank-id %s does not seem to be a valid German bank id."
+msgstr "Die BLZ %s scheint ungültig zu sein"
+
+#: controller/pagecontroller.php:166
 msgid "No errors found, but use at your own risk."
 msgstr ""
 "Keine Fehler gefunden, aber benutzt das Zeug bitte auf eigenes Risko ;)"
 
-#: js/script.js:24
-msgid "Bank Account Validator"
-msgstr "Bankkonto Validierung (DE)"
+#: js/script.js:26
+msgid "BAV - Bank Account Validator (DE)"
+msgstr "BAV - Bank Account Validator (DE)"
+
+#: js/script.js:34
+msgid "Clear"
+msgstr "Löschen"
+
+#: js/script.js:36
+msgid "Clear all fields of the input form"
+msgstr "Lösche alle Felddaten"
 
 #: templates/main.php:14
 msgid "IBAN"
@@ -81,3 +104,11 @@ msgstr "Kontonummer"
 #: templates/main.php:53
 msgid "Id of bank account"
 msgstr "Kontonummer des Bankkontos"
+
+#: templates/main.php:58
+msgid "Bank"
+msgstr "Bank"
+
+#: templates/main.php:65
+msgid "Bank Name"
+msgstr "Name der Bank"
