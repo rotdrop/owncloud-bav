@@ -16,11 +16,19 @@
 }
 
 .bank-account-validator input {
-  width:16em;
+  width:16em !important;
 }
 
 .bank-account-validator input.bankAccountBankName {
   background-color:#FFF;
   opacity:0.5;
   color: #000;
+  min-width:32em;
+  width:32em;
+}
+
+#bav-container {
+  width:32em;
+  min-width:40em;
+  max-width:40em;
 }

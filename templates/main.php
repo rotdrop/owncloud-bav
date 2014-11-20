@@ -13,7 +13,7 @@ $L = \OC_L10N::get('bav');
       <td class="label">
         <?php echo $L->t('IBAN'); ?>
       </td><td>
-        <input class="bankAccountIBAN"
+        <input class="bankAccountIBAN active"
                type="text"
                name="bankAccountIBAN"
                value="<?php $_['bankAccountIBAN']; ?>"
@@ -24,7 +24,7 @@ $L = \OC_L10N::get('bav');
       <td class="label">
         <?php echo $L->t('BIC'); ?>
       </td><td>
-        <input class="bankAccountBIC"
+        <input class="bankAccountBIC active"
                type="text"
                name="bankAccountBIC"
                value="<?php $_['bankAccountBIC']; ?>"
@@ -35,7 +35,7 @@ $L = \OC_L10N::get('bav');
       <td class="label">
         <?php echo $L->t('Bank Id'); ?>
       </td><td>
-        <input class="bankAccountBankId"
+        <input class="bankAccountBankId active"
                type="text"
                name="bankAccountBankId"
                value="<?php echo $_['bankAccountBankId']; ?>"
@@ -46,7 +46,7 @@ $L = \OC_L10N::get('bav');
       <td class="label">
         <?php echo $L->t('Account Id'); ?>
       </td><td>
-        <input class="bankAccountId"
+        <input class="bankAccountId active"
                type="text"
                name="bankAccountId"
                value="<?php $_['bankAccountId']; ?>"
@@ -58,7 +58,7 @@ $L = \OC_L10N::get('bav');
         <?php echo $L->t('Bank'); ?>
       </td>
       <td>
-        <input class="bankAccountBankName"
+        <input class="bankAccountBankName inactive"
                type="text"
                name="bankAccountBankName"
                value="<?php echo $_['bankAccountBanName']; ?>"

@@ -111,6 +111,21 @@ class PageController extends Controller
           }
         }
         $suggestions = implode(', ', $suggestions).$nl;
+      } else {
+        $accountId = $iban->Account();
+        $bankId = $iban->Bank();
+        if ($bankAccountBankId == '') {
+          $bankAccountBankId = $bankId;
+        } else if ($bankAccountBankId != $bankId) {
+          $message .= $this->l->t("Bank-id %s form IBAN and submitted bank-id %s do not coincide",
+                                  array($bankAccountBankId, $bankId)).$nl;
+        }
+        if ($bankAccountId == '') {
+          $bankAccountId  = $accountId;
+        } else if ($bankAccountId != $accountId) {
+          $message .= $this->l->t("Account-id %s form IBAN and submitted account-id %s do not coincide",
+                                  array($bankAccountId, $accountId)).$nl;
+        }
       }
     }
 
@@ -126,21 +141,24 @@ class PageController extends Controller
           $message .= $this->l->t("Computed BIC %s and submitted BIC %s do not coincide",
                                   array($bavBIC, $bankAccountBIC)).$nl;
         }
-      }
-      if ($bankAccountId != '') {
-        $kto = $bankAccountId;
-        if ($bav->isValidAccount($kto)) {
-          $selfIBAN = self::makeIBAN($blz, $kto);
-          if ($bankAccountIBAN == '') {
-            $bankAccountIBAN = $selfIBAN;
-          } else if ($bankAccountIBAN != $selfIBAN) {
-            $message .= $this->l->t("Generated IBAN %s and submitted IBAN %s do not coincide",
-                                    array($selfIBAN, $bankAccountIBAN));
+        if ($bankAccountId != '') {
+          $kto = $bankAccountId;
+          if ($bav->isValidAccount($kto)) {
+            $selfIBAN = self::makeIBAN($blz, $kto);
+            if ($bankAccountIBAN == '') {
+              $bankAccountIBAN = $selfIBAN;
+            } else if ($bankAccountIBAN != $selfIBAN) {
+              $message .= $this->l->t("Generated IBAN %s and submitted IBAN %s do not coincide",
+                                      array($selfIBAN, $bankAccountIBAN));
+            }
+          } else {
+            $message .= $this->l->t('The account number %s @ %s appears not to be a valid German bank account id.',
+                                    array($kto, $blz)).$nl;
           }
-        } else {
-          $message .= $this->l->t('The account number %s @ %s appears not to be valid German bank account id.',
-                                  array($kto, $blz)).$nl;
         }
+      } else {
+        $message .= $this->l->t('The bank-id %s does not seem to be a valid German bank id.',
+                                array($$blz)).$nl;
       }
     }
 
