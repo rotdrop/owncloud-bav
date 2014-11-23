@@ -98,6 +98,7 @@ class PageController extends Controller
     $bankAccountBankName = '';
     
     if ($bankAccountIBAN != '') {
+      $bankAccountIBAN = strtoupper($bankAccountIBAN);
       $iban = new \IBAN($bankAccountIBAN);
       
       if (!$iban->Verify()) {
@@ -117,13 +118,13 @@ class PageController extends Controller
         if ($bankAccountBankId == '') {
           $bankAccountBankId = $bankId;
         } else if ($bankAccountBankId != $bankId) {
-          $message .= $this->l->t("Bank-id %s form IBAN and submitted bank-id %s do not coincide",
+          $message .= $this->l->t("Bank-id %s from IBAN and submitted bank-id %s do not coincide",
                                   array($bankAccountBankId, $bankId)).$nl;
         }
         if ($bankAccountId == '') {
           $bankAccountId  = $accountId;
         } else if ($bankAccountId != $accountId) {
-          $message .= $this->l->t("Account-id %s form IBAN and submitted account-id %s do not coincide",
+          $message .= $this->l->t("Account-id %s from IBAN and submitted account-id %s do not coincide",
                                   array($bankAccountId, $accountId)).$nl;
         }
       }
