@@ -61,7 +61,7 @@ $L = \OC_L10N::get('bav');
         <input class="bankAccountBankName inactive"
                type="text"
                name="bankAccountBankName"
-               value="<?php echo $_['bankAccountBanName']; ?>"
+               value="<?php echo $_['bankAccountBankName']; ?>"
                placeholder="<?php echo $L->t("Bank Name"); ?>"
                disabled="disabled"
                />
