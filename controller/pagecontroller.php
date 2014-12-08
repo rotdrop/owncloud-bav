@@ -58,7 +58,8 @@ class PageController extends Controller
                     'bankAccountIBAN' => '',
                     'bankAccountBIC' => '',
                     'bankAccountBankId' => '',
-                    'bankAccountId' => '');
+                    'bankAccountId' => '',
+                    'bankAccountBankName' => '');
     return new TemplateResponse('bav', 'main', $params);  // templates/main.php
   }
 
@@ -78,7 +79,8 @@ class PageController extends Controller
                     'bankAccountIBAN' => '',
                     'bankAccountBIC' => '',
                     'bankAccountBankId' => '',
-                    'bankAccountId' => '');
+                    'bankAccountId' => '',
+                    'bankAccountBankName' => '');
     return new TemplateResponse('bav', 'main', $params, '');  // templates/main.php
   }
 
@@ -100,6 +102,7 @@ class PageController extends Controller
     if ($bankAccountIBAN != '') {
       $bankAccountIBAN = strtoupper($bankAccountIBAN);
       $iban = new \IBAN($bankAccountIBAN);
+      $bankAccountIBAN = $iban->MachineFormat();
       
       if (!$iban->Verify()) {
         $message .= $this->l->t('Failed to validate IBAN').$nl;
