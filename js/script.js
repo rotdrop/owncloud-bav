@@ -51,6 +51,8 @@
           open: function() {
             $('#navigation').hide();
 
+            dialogHolder.find('input').tipsy({gravity:'nw', fade:true});
+
             dialogHolder.find('input[type="text"]').
               off('blur').
               on('blur', function(event) {
