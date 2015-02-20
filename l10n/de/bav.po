@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-20 01:47+0100\n"
-"PO-Revision-Date: 2014-11-20 01:50+0100\n"
+"POT-Creation-Date: 2015-02-20 23:12+0100\n"
+"PO-Revision-Date: 2015-02-20 23:12+0100\n"
 "Last-Translator: Claus-Justus Heine <himself@claus-justus-heine.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -20,43 +20,46 @@ msgstr ""
 msgid "BAV"
 msgstr "BAV"
 
-#: controller/pagecontroller.php:104
+#: controller/pagecontroller.php:108
 msgid "Failed to validate IBAN"
 msgstr "Die IBAN scheint nicht korrekt zu sein"
 
-#: controller/pagecontroller.php:120
+#: controller/pagecontroller.php:124
 #, php-format
-msgid "Bank-id %s form IBAN and submitted bank-id %s do not coincide"
-msgstr "Aus der IBAN abgeleitete BLZ %s und angegebene BLZ %s stimmen nicht überein"
+msgid "Bank-id %s from IBAN and submitted bank-id %s do not coincide"
+msgstr ""
+"Aus der IBAN abgeleitete BLZ %s und angegebene BLZ %s stimmen nicht überein"
 
-#: controller/pagecontroller.php:126
+#: controller/pagecontroller.php:130
 #, php-format
-msgid "Account-id %s form IBAN and submitted account-id %s do not coincide"
-msgstr "Aus der IBAN abgeleitet Kontonummer %s und angegebene Kontonummer %s stimmen nicht überein"
+msgid "Account-id %s from IBAN and submitted account-id %s do not coincide"
+msgstr ""
+"Aus der IBAN abgeleitet Kontonummer %s und angegebene Kontonummer %s stimmen "
+"nicht überein"
 
-#: controller/pagecontroller.php:141
+#: controller/pagecontroller.php:145
 #, php-format
 msgid "Computed BIC %s and submitted BIC %s do not coincide"
 msgstr ""
 "Automatisch ermittelte BIC %s und angegebene BIC %s stimmen nicht überein"
 
-#: controller/pagecontroller.php:151
+#: controller/pagecontroller.php:155
 #, php-format
 msgid "Generated IBAN %s and submitted IBAN %s do not coincide"
 msgstr "Berechnete IBAN %s und angegebene IBAN %s stimmen nicht überein"
 
-#: controller/pagecontroller.php:155
+#: controller/pagecontroller.php:159
 #, php-format
 msgid ""
 "The account number %s @ %s appears not to be a valid German bank account id."
 msgstr "Die Kontonummer %s @ %s scheint ungültig zu sein"
 
-#: controller/pagecontroller.php:160
+#: controller/pagecontroller.php:164
 #, php-format
 msgid "The bank-id %s does not seem to be a valid German bank id."
 msgstr "Die BLZ %s scheint ungültig zu sein"
 
-#: controller/pagecontroller.php:166
+#: controller/pagecontroller.php:170
 msgid "No errors found, but use at your own risk."
 msgstr ""
 "Keine Fehler gefunden, aber benutzt das Zeug bitte auf eigenes Risko ;)"

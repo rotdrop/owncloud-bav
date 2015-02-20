@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-20 01:50+0100\n"
+"POT-Creation-Date: 2015-02-20 23:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,42 +21,42 @@ msgstr ""
 msgid "BAV"
 msgstr ""
 
-#: controller/pagecontroller.php:104
+#: controller/pagecontroller.php:108
 msgid "Failed to validate IBAN"
 msgstr ""
 
-#: controller/pagecontroller.php:120
+#: controller/pagecontroller.php:124
 #, php-format
-msgid "Bank-id %s form IBAN and submitted bank-id %s do not coincide"
+msgid "Bank-id %s from IBAN and submitted bank-id %s do not coincide"
 msgstr ""
 
-#: controller/pagecontroller.php:126
+#: controller/pagecontroller.php:130
 #, php-format
-msgid "Account-id %s form IBAN and submitted account-id %s do not coincide"
+msgid "Account-id %s from IBAN and submitted account-id %s do not coincide"
 msgstr ""
 
-#: controller/pagecontroller.php:141
+#: controller/pagecontroller.php:145
 #, php-format
 msgid "Computed BIC %s and submitted BIC %s do not coincide"
 msgstr ""
 
-#: controller/pagecontroller.php:151
+#: controller/pagecontroller.php:155
 #, php-format
 msgid "Generated IBAN %s and submitted IBAN %s do not coincide"
 msgstr ""
 
-#: controller/pagecontroller.php:155
+#: controller/pagecontroller.php:159
 #, php-format
 msgid ""
 "The account number %s @ %s appears not to be a valid German bank account id."
 msgstr ""
 
-#: controller/pagecontroller.php:160
+#: controller/pagecontroller.php:164
 #, php-format
 msgid "The bank-id %s does not seem to be a valid German bank id."
 msgstr ""
 
-#: controller/pagecontroller.php:166
+#: controller/pagecontroller.php:170
 msgid "No errors found, but use at your own risk."
 msgstr ""
 
