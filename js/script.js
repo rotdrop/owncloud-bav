@@ -24,6 +24,9 @@
         var validating = false;
         dialogHolder.dialog({
           title: t('bav', 'BAV - Bank Account Validator (DE)'),
+          position:{my:'center center',
+                    at:'center-5% center-10%',
+                    of:window},
           width: 'auto',
           height: 'auto',
           modal: true,
@@ -46,11 +49,43 @@
                   clearing = false;
                 }
               }
+            },
+            { 'text': t('bav', 'About'),
+              'class': 'about',
+              'title': t('bav', 'Opens a window which tells you what this is.'),
+              'click': function() {
+                // maybe place this in a new template for greater flexibility.
+                OC.dialogs.info( '<div class="bavhelp">'
+                               + t('bav', 'This is a mere front-end to')
+                               + '</div>'
+                               + '<div class="bavhelp">'
+                               + '<a target="_blank" href="http://bav.malkusch.de">'
+                               + 'BAV -- The German Bank Account Validator</a>, &copy; M. Malkusch'
+                               + '</div>'
+                               + '<div class="bavhelp">'
+                               + 'Owncloud front-end: &copy; C.-J. Heine'
+                               + '</div>'
+                               + '<div class="bavhelp">'
+                               + t('bav', 'Data entered will not be stored. BAV is able to compute '
+                               + 'the BIC given the bank-id, and to compute the IBAN '
+                               + 'given additionally the bank-account id. '
+                               + 'Additionally, it verifies that the bank-id exists '
+                               + 'by comparing with the data provided by the Deutsche Bundesbank. '
+                               + 'It will also pick the correct check-sum formula for the given '
+                               + 'bank-account id (there are a few hundret possible '
+                               + 'check-sum formulas, differing from bank to bank). '
+                               + 'Finally, given an IBAN, it will extract the bank-id and bank-account-id '
+                               + 'and also perform the check-sum computations in order to test whether the '
+                               + 'provided bank-account data is consistent. Please keep in mind that check-sums '
+                               + 'cannot catch all possible errors.'),
+                                t('bav', 'About BAV'), undefined, false, true);
+              }
             }
           ],
           open: function() {
             $('#navigation').hide();
 
+            dialogHolder.dialog('widget').find('button').tipsy({gravity:'nw', fade:true});
             dialogHolder.find('input').tipsy({gravity:'nw', fade:true});
 
             dialogHolder.find('input[type="text"]').
@@ -83,6 +118,7 @@
             });
           },
           close: function(event) {
+            $('.tipsy').remove(); // remove stray tooltips
             dialogHolder.dialog('destroy');
             dialogHolder.remove();
           }
