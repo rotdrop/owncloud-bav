@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 23:12+0100\n"
-"PO-Revision-Date: 2015-02-20 23:12+0100\n"
+"POT-Creation-Date: 2015-02-22 14:03+0100\n"
+"PO-Revision-Date: 2015-02-22 14:04+0100\n"
 "Last-Translator: Claus-Justus Heine <himself@claus-justus-heine.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -68,13 +68,54 @@ msgstr ""
 msgid "BAV - Bank Account Validator (DE)"
 msgstr "BAV - Bank Account Validator (DE)"
 
-#: js/script.js:34
+#: js/script.js:37
 msgid "Clear"
 msgstr "Löschen"
 
-#: js/script.js:36
+#: js/script.js:39
 msgid "Clear all fields of the input form"
 msgstr "Lösche alle Felddaten"
+
+#: js/script.js:53
+msgid "About"
+msgstr "Über"
+
+#: js/script.js:55
+msgid "Opens a window which tells you what this is."
+msgstr "Öffnet ein Fenster, indem Dir mitgeteilt wird, was das hier ist."
+
+#: js/script.js:59
+#, fuzzy
+msgid "This is a mere front-end to"
+msgstr "Diese App ist ein bloßes Front-End zu"
+
+#: js/script.js:69
+msgid ""
+"Data entered will not be stored. BAV is able to compute the BIC given the "
+"bank-id, and to compute the IBAN given additionally the bank-account id. "
+"Additionally, it verifies that the bank-id exists by comparing with the data "
+"provided by the Deutsche Bundesbank. It will also pick the correct check-sum "
+"formula for the given bank-account id (there are a few hundret possible "
+"check-sum formulas, differing from bank to bank). Finally, given an IBAN, it "
+"will extract the bank-id and bank-account-id and also perform the check-sum "
+"computations in order to test whether the provided bank-account data is "
+"consistent. Please keep in mind that check-sums cannot catch all possible "
+"errors."
+msgstr ""
+"Die eingegebenen Daten werden nicht gespeichert. BAV kann die BIC aus\n"
+"der BLZ berechnen, und außerdem die IBAN, wenn zusätzlich die\n"
+"Kontonummer angegeben wird. Ferner wird überprüft, ob die angegebene\n"
+"BLZ bei der Deutschen Bundesbank hinterlegt ist (also ob die\n"
+"existiert). Außerdem wird mit der passenden Prüfsummen-Formel getestet, ob\n"
+"die Kontonummer stimmt (es gibt ein paar Dutzend Prüfsummen-Formeln,\n"
+"die von Bank zu Bank variieren). Schließlich kann aus einer gegebenen\n"
+"IBAN die BLZ und die Kontonummer extrahiert werden wiederum mittels\n"
+"der individuellen Prüfsummen verifiziert werden. Bitte beachte, dass\n"
+"Prüfsummen nicht jeden Fehler finden können."
+
+#: js/script.js:81
+msgid "About BAV"
+msgstr "Über BAV"
 
 #: templates/main.php:14
 msgid "IBAN"

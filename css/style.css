@@ -32,3 +32,24 @@
   min-width:44em;
   max-width:44em;
 }
+
+div.bavhelp {
+  max-width: 44em
+}
+
+div.bavhelp a:link {
+  color:CornFlowerBlue;
+  text-decoration:underline;
+  font-weight:bold;
+}
+div.bavhelp a:visited {
+  color:CornFlowerBlue;
+  text-decoration:underline;
+  font-weight:bold;
+}
+div.bavhelp a:hover {
+  color:CornFlowerBlue;
+  text-decoration:underline;
+  font-style:italic;
+  font-weight:bold;
+}
