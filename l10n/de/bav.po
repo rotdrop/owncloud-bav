@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: bav\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-22 14:03+0100\n"
-"PO-Revision-Date: 2015-02-22 14:04+0100\n"
+"PO-Revision-Date: 2015-07-15 19:52+0200\n"
 "Last-Translator: Claus-Justus Heine <himself@claus-justus-heine.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -85,7 +85,6 @@ msgid "Opens a window which tells you what this is."
 msgstr "Öffnet ein Fenster, indem Dir mitgeteilt wird, was das hier ist."
 
 #: js/script.js:59
-#, fuzzy
 msgid "This is a mere front-end to"
 msgstr "Diese App ist ein bloßes Front-End zu"
 
