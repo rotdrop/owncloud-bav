@@ -1,5 +1,13 @@
 .ui-dialog.bav {
   overflow:hidden !important;
+  max-width:none;  
+}
+
+.ui-dialog.bav .ui-dialog-buttonpane {
+  max-width:none;
+  border: 1px solid #DDD;
+background: #EEE url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") repeat-x scroll 50% top;
+color: #333;
 }
 
 .ui-dialog.bav .ui-dialog-title {
@@ -9,6 +17,12 @@
   background-origin:padding-box;
   background-position:left middle;
   padding-left: 2em;
+}
+
+.ui-widget-content.bav {
+  border: 1px solid #DDD;
+  background: #EEE url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") repeat-x scroll 50% top;
+  color: #333;
 }
 
 .bank-account-validator td.label {
@@ -53,3 +67,9 @@ div.bavhelp a:hover {
   font-style:italic;
   font-weight:bold;
 }
+
+/*
+ * LocalVariables: ***
+ * css-indent-offset: 2 ***
+ * End: ***
+ */
