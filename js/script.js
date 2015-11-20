@@ -119,6 +119,7 @@
           },
           close: function(event) {
             $('.tipsy').remove(); // remove stray tooltips
+            $('.tooltip').remove();
             dialogHolder.dialog('destroy');
             dialogHolder.remove();
           }
