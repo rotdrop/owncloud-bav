@@ -1,6 +1,16 @@
+/* Make the dialog window appear over OC's global navigation bar,
+ * otherwise the dialog title-bar, which is at the same time the handle
+ * for moving the window, could disappear below the navigation bar.
+ */
 .ui-dialog.bav {
   overflow:hidden !important;
-  max-width:none;  
+  max-width:none;
+  z-index:2000;
+  padding:0px;
+}
+
+.ui-dialog.bav ~ .oc-dialog {
+  z-index:2000;
 }
 
 .ui-dialog.bav .ui-dialog-buttonpane {
