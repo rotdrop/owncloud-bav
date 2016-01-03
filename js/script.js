@@ -17,8 +17,6 @@
       $.post(OC.generateUrl('/apps/bav/bav'), {}).success(function(result) {
         var dialogHolder = $('<div id="bav-container"></div>');
         dialogHolder.html(result);
-        $('body').append(dialogHolder);
-        dialogHolder = $('#bav-container');
 
         var clearing = false;
         var validating = false;
@@ -83,9 +81,15 @@
             }
           ],
           open: function() {
+            var dialogHolder = $('#bav-container');
+            var dialogWidget = dialogHolder.dialog('widget');
+
+            dialogWidget.draggable('option', 'containment', '#content');
+
             $('#navigation').hide();
 
-            dialogHolder.dialog('widget').find('button').tipsy({gravity:'nw', fade:true});
+            // TODO: no more tipsy available
+            dialogWidget.find('button').tipsy({gravity:'nw', fade:true});
             dialogHolder.find('input').tipsy({gravity:'nw', fade:true});
 
             dialogHolder.find('input[type="text"]').
