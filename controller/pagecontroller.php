@@ -162,7 +162,7 @@ class PageController extends Controller
         }
       } else {
         $message .= $this->l->t('The bank-id %s does not seem to be a valid German bank id.',
-                                array($$blz)).$nl;
+                                array($blz)).$nl;
       }
     }
 
